@@ -1,10 +1,19 @@
-# 👋 Hi, I’m **Habi**
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=40&duration=1200&pause=800&color=38BDA6&center=true&vCenter=true&width=600&lines=Backend+Engineer;AI+Agent+Engineer;Systems+Builder" alt="Typing SVG" />
+
+### Hi, I’m **Habi** 👋
 
 **Backend Engineer • AI Agent Engineer • Systems Builder**
 
-I build **production‑grade backend systems** and **AI agents that actually scale** — not demos, not notebooks. Real users, real traffic, real edge cases.
+I build **production‑grade backend systems** and **AI agents that actually scale**. Real users, real traffic, real edge cases.
 
----
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/upchunk/)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:habi6799@gmail.com)
+
+</div>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=38BDA6&height=2" width="100%"/>
 
 ## 🚀 What I Do
 
@@ -19,7 +28,7 @@ I care deeply about:
 * 💸 **Cost‑awareness** (tokens, API credits, compute)
 * 🧠 **LLM realism** — context limits, failure modes, hallucination control
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=38BDA6&height=2" width="100%"/>
 
 ## 🧠 How I Think
 
@@ -34,55 +43,62 @@ The questions I ask before writing a line of code:
 
 I’d rather ship a boring system that holds than a clever one that breaks at scale.
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=38BDA6&height=2" width="100%"/>
 
 ## 🛠️ Tech Stack (Used in Production)
 
-**Languages**
+<div align="center">
 
-* Python (async‑first APIs, agents, data pipelines)
-* JavaScript / TypeScript (tooling, scraping, automation)
+![](https://skillicons.dev/icons?i=python,fastapi,django,mongodb,js,ts,docker,git&theme=dark)
 
-**Backend & Infra**
+![LlamaIndex](https://img.shields.io/badge/LlamaIndex-1B0A3D?style=for-the-badge&logoColor=white)
+![Pinecone](https://img.shields.io/badge/Pinecone-0B1120?style=for-the-badge&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
+![OpenAI](https://img.shields.io/badge/GPT-412991?style=for-the-badge&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logoColor=white)
 
-* FastAPI · Django
-* MongoDB (async) · Pinecone (vector store)
-* WebSocket streaming · async batch & background workflows
+</div>
 
-**AI / LLM Systems**
+**Backend & Infra** — FastAPI · Django · MongoDB (async) · Pinecone · WebSocket streaming · async batch & background workflows
 
-* LlamaIndex — ReAct agents, multi‑agent handoff, tool dispatch
-* Multi‑provider LLM orchestration (Claude, GPT) with model‑selection trade‑offs
-* Hybrid retrieval — keyword + vector + **reranking**
-* Token‑aware chunking, truncation & budgeting
-* Agent **evaluation & optimization loops** (not vibes‑based shipping)
+**AI / LLM Systems** — LlamaIndex (ReAct agents, multi‑agent handoff, tool dispatch) · multi‑provider orchestration (Claude, GPT) · hybrid retrieval (keyword + vector + reranking) · token‑aware chunking & budgeting · agent **evaluation & optimization loops**
 
-**Automation & Scraping**
+**Automation & Scraping** — Playwright (JS‑heavy & infinite‑scroll) · stealth, pagination & rate‑limit handling · external data‑API integration
 
-* Playwright (JS‑heavy & infinite‑scroll pages)
-* Stealth, pagination & rate‑limit handling
-* External data‑API integration (enrichment, search, lookup)
+<img src="https://capsule-render.vercel.app/api?type=rect&color=38BDA6&height=2" width="100%"/>
 
----
+## 📊 GitHub Activity
+
+<div align="center">
+
+![Profile Views](https://komarev.com/ghpvc/?username=upchunk&style=for-the-badge&color=38BDA6&label=PROFILE+VIEWS)
+![Followers](https://img.shields.io/github/followers/upchunk?style=for-the-badge&color=38BDA6&labelColor=0B1120)
+![Stars](https://img.shields.io/github/stars/upchunk?style=for-the-badge&color=38BDA6&labelColor=0B1120)
+
+</div>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=38BDA6&height=2" width="100%"/>
 
 ## 📂 Highlighted Projects
 
-Real repositories that represent how I work:
+<details open>
+<summary><b>Real repositories that represent how I work</b></summary>
 
-### 🔧 Backend & Infrastructure
+<br>
 
+**🔧 Backend & Infrastructure**
 * **3dvt-backend** — Python backend powering a 3D visualization platform
 * **django-minio-backend** — Django + MinIO backend for scalable object storage
 
-### 🌐 Frontend‑Connected Systems
-
+**🌐 Frontend‑Connected Systems**
 * **3dvt-frontend** — Frontend paired with a production backend
 * **web-selector-annotator** — Browser extension for DOM selection & annotation
 
-### 🧪 Tools & Utilities
-
+**🧪 Tools & Utilities**
 * **office-word-count** — Replacement utility for deprecated office tools
 * **tekber3101** — Practical local development & experimentation project
+
+</details>
 
 Recurring themes across my work:
 
@@ -90,7 +106,7 @@ Recurring themes across my work:
 * Designing **agent tools for unknown or evolving schemas**
 * Making AI systems **predictable, observable, and cost‑aware**
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=38BDA6&height=2" width="100%"/>
 
 ## 🤝 Working With Me
 
@@ -106,18 +122,19 @@ I work especially well with:
 * Teams serious about AI **beyond the PoC stage**
 * Anyone wrestling with high‑volume or unstructured data
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=38BDA6&height=2" width="100%"/>
+
+<div align="center">
 
 ## 📬 Let’s Connect
 
-If you’re:
+Hiring a **Backend / AI Engineer** · looking for a **technical partner** · building systems that need to scale *cleanly*? Reach out.
 
-* Hiring a **Backend / AI Engineer**
-* Looking for a **technical partner**
-* Building systems that need to scale *cleanly*
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/upchunk/)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:habi6799@gmail.com)
 
-Reach out — I’d be glad to talk.
-
----
+<br>
 
 > *Good engineering is invisible to users — and unforgettable to teams.*
+
+</div>
