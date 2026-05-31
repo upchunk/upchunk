@@ -2,19 +2,22 @@
 
 **Backend Engineer • AI Agent Engineer • Systems Builder**
 
-I build **production‑grade backend systems** and **AI agents that actually scale** — not just demos, not just notebooks.
+I build **production‑grade backend systems** and **AI agents that actually scale** — not demos, not notebooks. Real users, real traffic, real edge cases.
 
 ---
 
 ## 🚀 What I Do
 
-I work at the intersection of **backend engineering, data systems, and applied AI**. My focus is turning messy, real‑world requirements into clean, reliable, and cost‑efficient systems.
+I work at the intersection of **backend engineering, data systems, and applied AI**. My job is turning messy, real‑world requirements into clean, reliable, cost‑efficient systems — the kind that survive contact with production.
+
+Lately that means **multi‑agent LLM systems**: tool‑calling agents, hybrid retrieval pipelines, streaming chat, and the unglamorous plumbing (token budgets, memory, evals) that makes them dependable instead of impressive‑once.
 
 I care deeply about:
 
 * ⚡ **Latency & performance**
-* 🧱 **System reliability & maintainability**
-* 🧠 **LLM realism** (context limits, cost, failure modes)
+* 🧱 **Reliability & maintainability**
+* 💸 **Cost‑awareness** (tokens, API credits, compute)
+* 🧠 **LLM realism** — context limits, failure modes, hallucination control
 
 ---
 
@@ -22,13 +25,14 @@ I care deeply about:
 
 I’m engineering‑first, not hype‑first.
 
-I naturally ask questions like:
+The questions I ask before writing a line of code:
 
-* *How do we handle 2MB+ text without blowing the context window?*
-* *What happens when the schema changes tomorrow?*
-* *Can this run 10× bigger without 10× cost?*
+* *How do we handle 2MB+ of text without blowing the context window?*
+* *What happens when the schema changes tomorrow — or doesn’t exist yet?*
+* *Can this run 10× bigger without 10× the cost?*
+* *When the model is wrong, how does the system fail — loudly, safely, or silently?*
 
-My goal is to ship systems that survive real users, real traffic, and real edge cases.
+I’d rather ship a boring system that holds than a clever one that breaks at scale.
 
 ---
 
@@ -36,33 +40,34 @@ My goal is to ship systems that survive real users, real traffic, and real edge 
 
 **Languages**
 
-* Python (async‑first, APIs, agents)
+* Python (async‑first APIs, agents, data pipelines)
 * JavaScript / TypeScript (tooling, scraping, automation)
 
 **Backend & Infra**
 
-* FastAPI
-* Django
-* MongoDB
-* Async processing & batch workflows
+* FastAPI · Django
+* MongoDB (async) · Pinecone (vector store)
+* WebSocket streaming · async batch & background workflows
 
 **AI / LLM Systems**
 
-* LlamaIndex
-* Tool‑based agents
-* Retrieval strategies (keyword, vector, hybrid)
-* Token‑aware chunking & truncation
+* LlamaIndex — ReAct agents, multi‑agent handoff, tool dispatch
+* Multi‑provider LLM orchestration (Claude, GPT) with model‑selection trade‑offs
+* Hybrid retrieval — keyword + vector + **reranking**
+* Token‑aware chunking, truncation & budgeting
+* Agent **evaluation & optimization loops** (not vibes‑based shipping)
 
 **Automation & Scraping**
 
-* Playwright (JS‑heavy & infinite scroll pages)
-* Stealth & pagination handling
+* Playwright (JS‑heavy & infinite‑scroll pages)
+* Stealth, pagination & rate‑limit handling
+* External data‑API integration (enrichment, search, lookup)
 
 ---
 
 ## 📂 Highlighted Projects
 
-These are real repositories from my GitHub that represent how I work:
+Real repositories that represent how I work:
 
 ### 🔧 Backend & Infrastructure
 
@@ -79,10 +84,10 @@ These are real repositories from my GitHub that represent how I work:
 * **office-word-count** — Replacement utility for deprecated office tools
 * **tekber3101** — Practical local development & experimentation project
 
-My repos often explore:
+Recurring themes across my work:
 
-* Handling **large, messy datasets**
-* Designing **agent tools for unknown schemas**
+* Handling **large, messy, unstructured datasets**
+* Designing **agent tools for unknown or evolving schemas**
 * Making AI systems **predictable, observable, and cost‑aware**
 
 ---
@@ -93,13 +98,13 @@ I’m a strong fit if you need someone who can:
 
 * Design **AI agents that don’t hallucinate themselves to death**
 * Bridge **product needs ↔ backend constraints ↔ LLM limits**
-* Own systems end‑to‑end, not just features
+* Own systems end‑to‑end — architecture, retrieval, evals, and the parts nobody likes to maintain
 
 I work especially well with:
 
 * Startups moving fast but needing stability
-* Companies serious about AI beyond PoCs
-* Teams dealing with high‑volume or unstructured data
+* Teams serious about AI **beyond the PoC stage**
+* Anyone wrestling with high‑volume or unstructured data
 
 ---
 
@@ -111,7 +116,7 @@ If you’re:
 * Looking for a **technical partner**
 * Building systems that need to scale *cleanly*
 
-Feel free to reach out.
+Reach out — I’d be glad to talk.
 
 ---
 
