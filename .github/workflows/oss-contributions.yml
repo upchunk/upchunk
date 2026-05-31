@@ -1,0 +1,70 @@
+name: OSS Contributions
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # daily at 03:00 UTC
+  workflow_dispatch:        # manual run button
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build contributions list
+        uses: actions/github-script@v7
+        with:
+          # Built-in token works for PUBLIC contributions.
+          # For private/org contributions, create a classic PAT with
+          # repo + read:org scopes, save it as secret OSS_TOKEN, and
+          # change the next line to: ${{ secrets.OSS_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const user = context.repo.owner;
+
+            // Merged PRs you authored, in repos you do NOT own
+            const q = `type:pr author:${user} is:merged -user:${user}`;
+            const res = await github.rest.search.issuesAndPullRequests({
+              q, sort: 'updated', order: 'desc', per_page: 50
+            });
+
+            // Group by repository
+            const byRepo = {};
+            for (const pr of res.data.items) {
+              const m = pr.repository_url.match(/repos\/(.+)$/);
+              const repo = m ? m[1] : 'unknown';
+              (byRepo[repo] ||= []).push(pr);
+            }
+
+            // Build markdown rows (most recently active repos first, cap at 12)
+            const rows = Object.entries(byRepo).slice(0, 12).map(([repo, prs]) => {
+              const n = prs.length;
+              const latest = prs[0];
+              const title = latest.title.replace(/\|/g, '\\|');
+              return `- **[${repo}](https://github.com/${repo})** — ${n} merged PR${n > 1 ? 's' : ''} · latest: [#${latest.number} ${title}](${latest.html_url})`;
+            });
+
+            const block = rows.length
+              ? rows.join('\n')
+              : '*No merged external contributions found yet.*';
+
+            const START = '<!-- OSS:START -->';
+            const END = '<!-- OSS:END -->';
+            let readme = fs.readFileSync('README.md', 'utf8');
+            readme = readme.replace(
+              new RegExp(`${START}[\\s\\S]*?${END}`),
+              `${START}\n${block}\n${END}`
+            );
+            fs.writeFileSync('README.md', readme);
+
+      - name: Commit changes
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --quiet --cached || git commit -m "chore: update OSS contributions"
+          git push
