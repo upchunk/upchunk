@@ -17,6 +17,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          USERNAME: upchunk
+          GH_USERNAME: upchunk
           COMMIT_MSG: "chore: update recent activity"
           MAX_LINES: 5
