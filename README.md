@@ -69,6 +69,9 @@ I’d rather ship a boring system that holds than a clever one that breaks at sc
 
 ## 📊 GitHub Activity
 
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
+
 <div align="center">
 
 ![Profile Views](https://komarev.com/ghpvc/?username=upchunk&style=for-the-badge&color=38BDA6&label=PROFILE+VIEWS)
